@@ -1,0 +1,18 @@
+#!/bin/bash
+# Author: Malik Muheem
+# Date: Sun Feb 20 15:18:34 IST 2022
+
+echo -e "     MENU     \n
+1. List of files
+2. List of processes
+3. Show current date
+4. Quit\n"
+echo " Enter your option: "
+read choice
+case "$choice" in
+	1) ls -lrt ;;
+	2) ps -f ;;
+	3) date ;;
+	4) exit ;;
+	5) echo " Invalid option." 
+esac
